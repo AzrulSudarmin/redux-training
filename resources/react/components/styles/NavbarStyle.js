@@ -18,6 +18,11 @@ const Style = {
   anchor: {
     color: "white" ,
     textDecoration: "none"
+  } ,
+  stickyName: {
+    right: "0",
+    top: "10px",
+    position: "fixed"
   }
 }
 

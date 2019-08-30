@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import Style from './styles/NavbarStyle';
+import StyelCombine from '../lib/style';
 
 class Navbar extends Component {    
   
   render() {
-    const { profile } = this.props;
-
     return (
       <div style={Style.navbar}>
         <ul style={Style.ul}>
@@ -16,9 +15,9 @@ class Navbar extends Component {
           <li style={Style.li}> 
             <Link style={Style.anchor} to="/aboutus"> About </Link> 
           </li>
-          <li style={Style.li}>
+          <li style={StyelCombine([Style.li, Style.stickyName])}>
             <span>
-              Hi, nama. This is navbar with auth
+              Howdy Nama
             </span>
           </li>
         </ul>
